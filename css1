@@ -1,4 +1,4 @@
-* {
+ /* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ p {
  
 span {
      background-color: tomato; 
-}
+}  */
 
 * {
     box-sizing: border-box;
