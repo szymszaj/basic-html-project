@@ -1,0 +1,21 @@
+body{
+    background-color: #333;
+    color: #fff;
+    font-size: 36px; 
+    font-family: 'Comfortaa', cursive;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 25px;
+    width: 800px;
+    height: 600px;
+}
+p{
+    color: lime
+}
+span{
+    color: red;
+    text-decoration: underline;
+}
