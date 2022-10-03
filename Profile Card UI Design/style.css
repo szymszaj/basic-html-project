@@ -1,6 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito:wght@300;400;500;600;700&display=swap");
 body {
-  margin-bottom: 10px;
-  margin: 10px;
   font: 18px "Nunito", sans-serfi;
   color: black;
   min-height: 100vh;
@@ -15,14 +14,8 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: url(zdj.png) no-repeat center;
+  background: url("zdj.png") no-repeat center;
   background-size: cover;
-  -webkit-animation: backgroundZoomAnimate 20s forwards;
-          animation: backgroundZoomAnimate 20s forwards;
-}
-
-img {
-  width: 200px;
 }
 
 @-webkit-keyframes backgroundZoomAnimate {
@@ -49,9 +42,4 @@ img {
   position: relative;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  border: 2px solid rgba(255, 255, 255, 0.2509803922);
-  padding: 3rem 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}/*# sourceMappingURL=style.css.map 
+}/*# sourceMappingURL=style.css.map */
