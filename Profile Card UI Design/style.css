@@ -16,6 +16,8 @@ body::before {
   pointer-events: none;
   background: url("zdj.png") no-repeat center;
   background-size: cover;
+  -webkit-animation: backgroundZoomAnimate 20s forwards;
+          animation: backgroundZoomAnimate 20s forwards;
 }
 
 @-webkit-keyframes backgroundZoomAnimate {
@@ -42,4 +44,94 @@ body::before {
   position: relative;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.2509803922);
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .profile-card {
+    width: auto;
+  }
+}
+.profile-card__ing img {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  box-shadow: 0 10px 60px -10px rgba(13, 28, 39, 0.5);
+}
+.profile-card__desc {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.profile-card__desc h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.profile-card__desc h1 + div {
+  font-size: 20px;
+}
+.profile-card__info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media screen and (max-width: 576px) {
+  .profile-card__info {
+    gap: 30px;
+  }
+}
+.profile-card > div {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.profile-card > div > *:first-child {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.profile-card > div > *:last-child {
+  font-size: 16px;
+  opacity: 0.7;
+}
+.profile-card__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profile-card__social a {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  margin: 15px;
+  border-radius: 40%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(209, 14, 199);
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .profile-card__social a {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile-card__social a:hover {
+    transform: scale(1.2) translateY(-5px);
+  }
 }/*# sourceMappingURL=style.css.map */
