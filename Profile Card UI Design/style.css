@@ -55,7 +55,7 @@ body::before {
     width: auto;
   }
 }
-.profile-card__ing img {
+.profile-card__img img {
   margin: auto;
   width: 200px;
   height: 200px;
@@ -118,7 +118,7 @@ body::before {
   border-radius: 40%;
   align-items: center;
   justify-content: center;
-  color: rgb(209, 14, 199);
+  color: rgb(0, 0, 0);
   position: relative;
   flex-shrink: 0;
   transition: all 0.2s;
@@ -134,4 +134,80 @@ body::before {
   .profile-card__social a:hover {
     transform: scale(1.2) translateY(-5px);
   }
+}
+.profile-card__social a.facebook {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7);
+}
+.profile-card__social a.Instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  box-shadow: 0 4px 30px rgba(120, 64, 190, 0.6);
+}
+.profile-card__social a.twitter {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+.profile-card__social a.github {
+  background: linear-gradient(45deg, #333333, #626b73);
+  box-shadow: 0 4px 30px rgba(63, 65, 67, 0.6);
+}
+.profile-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 576px) {
+  .profile-card__actions {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.profile-card__actions > button {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 0;
+  min-width: 250px;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .profile-card__actions > button {
+    min-width: 170px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .profile-card__actions > button {
+    min-width: inherit;
+    width: 100px;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .profile-card__actions > button {
+    min-width: inherit;
+    width: 100px;
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .profile-card__actions > button:hover {
+    transform: translateY(-5px);
+  }
+}
+.profile-card__actions > button.blue {
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-sizing: 0 4px 30px rgba(19, 127, 212, 0.4);
+}
+.profile-card__actions > button.blue:hover {
+  box-shadow: 0 7px 30px rgba(19, 127, 212, 0.75);
+}
+.profile-card__actions > button.orange {
+  background: linear-gradient(45deg, #d5135a, #f05924);
+  box-shadow: 0 4px 30px rgba(223, 45, 70, 0.35);
+}
+.profile-card__actions > button.orange:hover {
+  box-shadow: 0 7px 30px rgba(223, 45, 70, 0.75);
 }/*# sourceMappingURL=style.css.map */
