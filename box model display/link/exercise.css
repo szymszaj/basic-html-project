@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+    font-size: 36px;
+    margin: 50px;
+}
+.btn{
+    padding: 10px 20px ;
+    background-color: tomato;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s ;
+
+}
+
+.btn:hover {
+    background-color: gold;
+    box-shadow:0 0 5px gold;
+
+
+    
+}
