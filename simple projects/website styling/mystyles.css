@@ -8,7 +8,7 @@ img{
     display: block;
     margin: 0 auto;
     width: 800px;
-    border-radius: 25px;
+    border-radius: 60px;
     width: 800px;
     height: 600px;
 }
@@ -18,4 +18,21 @@ p{
 span{
     color: red;
     text-decoration: underline;
+}
+/* .all p{
+    color: rgb(202, 34, 194);
+    text-decoration: none;
+   
+}
+.text {
+    color: rgb(28, 204, 22);
+    font-size: 50%;
+
+} */
+.italic{
+    font-style: italic;
+    font-size: 36px;
+}
+.all {
+    font-size: 78px;
 }
