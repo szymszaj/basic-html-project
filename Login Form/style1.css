@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #343f80;
+    background: #3a0622;
 }
 .box{
     position: relative;
@@ -143,13 +143,29 @@ input[type="submit"]
     outline: none;
     background: #45f3ff;
     padding: 11px 25px ;
-    width: 100px;
+    width: 105px;
     margin-top: 10px;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
 }
 input[type="submit"]:active
+{
+    opacity: 0.8;
+}
+input[type="set"]
+{
+    border: none;
+    outline: none;
+    background: #09bd96;
+    padding: 11px 25px ;
+    width: 105px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input[type="set"]:active
 {
     opacity: 0.8;
 }
