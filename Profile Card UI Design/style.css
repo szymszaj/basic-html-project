@@ -164,9 +164,9 @@ body::before {
   }
 }
 .profile-card__actions > button {
-  font-weight: bold;
+  font-weight: bold ;
   font-size: 22px;
-  padding: 15px 0;
+  padding: 10px 0;
   min-width: 250px;
   border-radius: 50px;
   color: rgb(0, 0, 0);
@@ -198,7 +198,7 @@ body::before {
   }
 }
 .profile-card__actions > button.blue {
-  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  background: linear-gradient(45deg, #229be7, #0e71c8);
   box-sizing: 0 4px 30px rgba(19, 127, 212, 0.4);
 }
 .profile-card__actions > button.blue:hover {
