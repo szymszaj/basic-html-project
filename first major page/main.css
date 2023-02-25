@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,11 +10,18 @@ nav {
     height: 50px;
     
 }
+/* nav {
+    height: 50px;
+    background-color: #494747;
+    text-align: center;
+    line-height: 50px;
+    font-size: 0;
+} */
 
-nav li {
-    display: inline-block;
-}
-nav li a {
+/* nav li {
+    display: inline-block ;
+} */
+/* nav li a {
     padding: 0 50px;
     color: rgb(168, 26, 26);
     text-decoration: none;
@@ -22,7 +29,64 @@ nav li a {
     font-weight: bold;
     letter-spacing: 2px;
     transition: color .3s;
-}
-nav li a:hover {
+   
+} */
+/* nav li a:hover {
     color: rgb(10, 113, 172);
+} */ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway' , sans-serif;
+}
+.nav {
+    height: 50px;
+    background-color: #333;
+    text-align: center;
+    line-height: 50px;
+}
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    padding: 0 50px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color .3s;
+}
+.nav-item a:hover {
+    color: rgb(32, 172, 153);
+}
+.header-img {
+    position: relative;
+    height: 300px;
+    background-image:url('img/caucasus-5299607_1920.jpg') ;
+    background-size: cover;
+    background-position: 0 30%;
+}
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 5;
+}
+.header-text h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.header-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 3, 27, 0.4);
 }
