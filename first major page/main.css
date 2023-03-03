@@ -111,3 +111,12 @@ footer {
 .icon-box a :hover {
     color: rgb(32, 172, 153)
 }
+main {
+    margin: 50px auto;
+    width: 1200px;
+}
+main h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
