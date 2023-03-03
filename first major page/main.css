@@ -120,3 +120,30 @@ main h2 {
     text-transform: uppercase;
     text-align: center;
 }
+.about-us-box {
+    margin: 40px 0;
+}
+.top {
+    position: relative;
+    height: 300px;
+    background-image: url(img/coffee-4334647_1920.jpg);
+    background-position: 0 30%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.middle {
+    position: relative;
+    height: 300px;
+    background-image: url(img/workspace-1280538_1920.jpg);
+    background-position: 0 30%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bottom {
+    position: relative;
+    height: 300px;
+    background-image: url(img/iphone-2390121_1920.jpg);
+    background-position: 0 30%;
+    background-position: center;
+    background-attachment: fixed;
+}
