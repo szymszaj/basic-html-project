@@ -172,6 +172,9 @@ main h2 {
     font-size: 26px;
     
 }
+.fa-solid {
+    margin-right: 10px;
+}
 /* //cennik */
 /* .cennik-list {
     margin: 0 auto;
