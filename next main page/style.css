@@ -6,17 +6,17 @@
 body {
     font-family: 'open sans', 'sans-serif';
 }
-nav{
-    height: 60px;
-    line-height: 60px;
-    background-color: #ddd;
-    text-align: center;
-}
 /* /wazne! */
 .wrapper{
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
+}
+nav{
+    height: 60px;
+    line-height: 60px;
+    background-color: #ddd;
+    text-align: center;
 }
 .burger-icon {
     display: block;
@@ -32,6 +32,20 @@ nav{
 .nav-items {
     display: none;
 }
+/* /header! */
+
+.header {
+    position: relative;
+    height: 330px;
+    background-image: url('img/sea\ 640.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
 
 /* !ważne */
 @media (min-width: 768px) {
