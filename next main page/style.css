@@ -27,8 +27,31 @@ nav{
     line-height: 60px;
     cursor: pointer;
     font-size: 30px;
-    color: blue;
+    color: #09f ;
 }
 .nav-items {
     display: none;
 }
+
+/* !ważne */
+@media (min-width: 768px) {
+    .burger-icon{
+    display: none;
+    }
+    .nav-items {
+    display: block;
+    }
+    .nav-items a {
+        padding: 0 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #333;
+        transition: color 0.3s;
+    }
+    .nav-items a:hover {
+        color: #09f;
+    }
+}
+
+
