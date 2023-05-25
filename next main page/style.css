@@ -35,6 +35,11 @@ body {
     text-transform: uppercase;
     color: #09f;
 }
+.section-title{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
 nav{
     height: 60px;
     line-height: 60px;
@@ -65,6 +70,33 @@ nav{
     background-position: center;
    
 }
+
+/* //main */
+
+main{
+    margin: 60px 0;
+}
+
+/* //o nas */
+.about-us-info {
+    margin-bottom: 10px;
+}
+/* //produkty */
+.products {
+    margin: 60px auto;
+}
+.products h3 {
+    text-transform: uppercase;
+}
+.first-product {
+    position: relative;
+    height: 300px;
+    background-image: url('img/office-620822_640.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
 
 /* !ważne */
 @media (min-width: 768px) {
