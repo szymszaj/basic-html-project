@@ -24,6 +24,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    
+}
+.hero-text h1 {
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 5px black;
+    color: #ddd;
+}
+.hero-text span {
+    text-transform: uppercase;
+    color: #09f;
 }
 nav{
     height: 60px;
@@ -56,12 +66,6 @@ nav{
    
 }
 
-
-
-
-
-
-
 /* !ważne */
 @media (min-width: 768px) {
     .burger-icon{
@@ -81,6 +85,26 @@ nav{
     .nav-items a:hover {
         color: #09f;
     }
-}
 
 
+
+    .header{
+        height: 400px;
+        background-image: url('img/mountains-190055.jpg');  
+    }
+    .hero-text h1 {
+        font-size: 36px;
+        }
+    .hero-text p{
+    font-size: 18px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .hero-text h1 {
+            font-size: 42px;
+            }
+        .hero-text p{
+        font-size: 20px;
+            }
+
+    }
