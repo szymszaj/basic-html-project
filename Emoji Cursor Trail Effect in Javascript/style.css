@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #111;
+    overflow: hidden;
+}
+span
+{
+    position: absolute;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 153, 255);
+    animation: alternate 1s linear infinite;
+}
