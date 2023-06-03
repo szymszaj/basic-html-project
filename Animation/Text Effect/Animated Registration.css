@@ -57,6 +57,20 @@ form h2{
     color: #999;
     text-transform: uppercase;
 }
+.inputBox label span {
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+
+.inputBox input:focus ~ label span,
+.inputBox input:valid ~ label span {
+    color: var(--clr);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+} 
+
 .inputBox input:focus,
 .inputBox input:valid
 {
