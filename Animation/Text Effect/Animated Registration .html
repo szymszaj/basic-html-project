@@ -33,12 +33,18 @@
         <p>Already have an account ? <a href="#">Login</a></p>
     </form>
     <script>
-        let label = document.querySelectorAll ('label').
+        // let label = document.querySelectorAll ('label').
+        // forEach(label => {
+        //     label.innerHTML = label.innerText.split('').map
+        //     ((letters, i) => `<span style="transition-delay: $
+        //     {i * 50}ms">${letters}</span>`).join('');
+            
+        // });
+        let label = document.querySelectorAll('label').
         forEach(label => {
             label.innerHTML = label.innerText.split('').map
             ((letters, i) => `<span style="transition-delay: $
             {i * 50}ms">${letters}</span>`).join('');
-            
         });
     </script>
 </body>

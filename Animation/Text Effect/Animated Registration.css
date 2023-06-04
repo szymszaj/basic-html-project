@@ -60,21 +60,24 @@ form h2{
 .inputBox label span {
     position: relative;
     display: inline-flex;
-    letter-spacing: 0.05em;
-    transition: 0.4s ease-in-out;
+    letter-spacing: 0.10em;
+    transition: 0.25s ease-in-out;
+    animation-timing-function: ease-in-out;
+    
 }
+
 
 .inputBox input:focus ~ label span,
 .inputBox input:valid ~ label span {
     color: var(--clr);
     letter-spacing: 0.15em;
-    transform: translateY(-25px);
+    transform: translateY( -25px );
 } 
 
 .inputBox input:focus,
 .inputBox input:valid
 {
-    border-bottom: 2px solid var(--clr);
+    border-bottom: 3px solid var(--clr);
 }
 .inputBox input [type="submit"]{
     background: var(--clr);
@@ -105,3 +108,23 @@ form p{
     text-decoration: none;
 }
 
+
+/* @keyframes label span {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+label span{
+  display: inline-block;
+  animation-name: letterAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+} */
