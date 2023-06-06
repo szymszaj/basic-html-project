@@ -54,19 +54,21 @@ body{
         inset: 3px;
         background: #292929;
     }
-    .card .imgBx {
-        position: absolute;
-        top: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 150px;
-        height: 150px;
-        background: #000;
-        transition: 0.5s;
-        z-index: 10;
-        overflow: hidden;
-    }
-    .card:hover .imgBx {
+     .card .imgBx {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      background: #000;
+      transition: 0.5s;
+      z-index: 10;
+      overflow: hidden;
+  
+    } 
+    
+  .card:hover .imgBx {
         width: 250px;
         height: 250px;
     }
@@ -94,13 +96,13 @@ body{
         position: absolute;
         inset: 3px;
         background: #292929;
-    }
-    .card .imgBx img {
+     }
+    
+    /* .card .imgBx img {
         position: absolute;
         z-index: 1;
         top: 10px;
         left: 10px;
         width: calc(100% -20px);
         height: calc(100% -20px);
-    }
-  
+    } 
