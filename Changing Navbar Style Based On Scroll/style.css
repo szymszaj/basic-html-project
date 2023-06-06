@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro' sans-serif;
+}
+body{
+    background: #262626;
+    min-height: 200vh;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    padding: 0 50px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
