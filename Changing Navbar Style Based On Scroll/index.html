@@ -11,7 +11,7 @@
 <body>
     <nav id="navbar">
         <a href="#" class="brand">
-            <span></span>
+            <span><i class="fa-brands fa-apple"></i></span>
             <span>Apple</span>
         </a>
         <ul>
@@ -52,6 +52,22 @@
         
         </ul>
     </nav>
-    
+    <script>
+        let lastScrollTop = 0; 
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function
+        (){
+            let scrollTop = window.pageYOffset ||
+            document.documentElement.scrollTopl;
+            if(scrollTop > lastScrollTop){
+                navbar.classList.add('icon');
+            } else{
+                navbar.classList.remove('icon');
+            }
+            lastScrollTop = scrollTop;
+            
+        }
+        )
+    </script>
 </body>
 </html>
