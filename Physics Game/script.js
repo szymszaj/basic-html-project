@@ -65,10 +65,14 @@ window.addEventListener('load', function (){
             this.spriteX = this.collisionX - this.width * 0.5;
             this.spriteY = this.collisionY - this.height * 0.5
             -70;
-
+            this.frameX = Math.floor(Math.random() * 4);
+            this.frameY = Math.floor(Math.random() * 3);
+            
         }
         draw(context){
-            context.drawImage(this.image, 0, 0, this.spriteWidth, 
+            //zmiana wygladu roslin 
+            context.drawImage(this.image, this.frameX * this.spriteWidth, 
+                0 * this.spriteHeight, this.spriteWidth, 
                 this.spriteHeight, this.spriteX, this.spriteY,
                 this.width, this.height);
             context.beginPath();
@@ -88,6 +92,7 @@ window.addEventListener('load', function (){
             this.canvas = canvas;
             this.width = this.canvas.width; 
             this.height = this.canvas.height;
+            this.topMargin = 260;
             this.player = new Player(this);
             //ilosc 
             this.numberOfObstacles = 10;
@@ -140,13 +145,20 @@ window.addEventListener('load', function (){
                     const dy = testObstacle.collisionY -
                     obstacle.collisionY;
                     const distance = Math.hypot(dy, dx);
+                    const distanceBuffer = 150;
                     const sumOfRadii = testObstacle.
-                    collisionRadius + obstacle.collisionRadius;
+                    collisionRadius + obstacle.collisionRadius
+                    + distanceBuffer;
                     if (distance < sumOfRadii){
                         overlap = true;
                     }
                    });
-                   if (!overlap){
+                   const margin = testObstacle.collisionRadius * 2;
+                   if (!overlap && testObstacle.spriteX > 0 &&
+                    testObstacle.spriteX < this.width - 
+                    testObstacle.width && testObstacle.collisionY > 
+                    this.topMargin + margin && testObstacle.collisionY < 
+                    this.height - margin){
                     this.obstacles.push(testObstacle);
                    }
                    attempts++; 
