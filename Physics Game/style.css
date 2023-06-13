@@ -21,3 +21,6 @@
 #obstacles {
     display: none;
 }
+#obstacles, #bull{
+    display: none;
+}
