@@ -135,7 +135,7 @@ window.addEventListener('load', function (){
             
         }
         draw(context){
-            //zmiana wygladu roslin 
+            //zmiana wygladu roslin //change in the appearance of plants
             context.drawImage(this.image, this.frameX * this.spriteWidth, 
                 this.frameY * this.spriteHeight, this.spriteWidth, 
                 this.spriteHeight, this.spriteX, this.spriteY,
@@ -173,7 +173,7 @@ window.addEventListener('load', function (){
             }
 
 
-            // event listeners
+            // event listeners//słuchacze zdarzeń
             canvas.addEventListener('mousedown', e =>{
                 this.mouse.x = e.offsetX;
                 this.mouse.y = e.offsetY;
