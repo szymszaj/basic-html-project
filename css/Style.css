@@ -1,0 +1,25 @@
+body {
+  padding: 9px;
+  display: inline-block;
+}
+
+p {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 99;
+}
+nav ul {
+  background: beige;
+}
+nav div h2 {
+  display: block;
+  image-rendering: auto;
+}/*# sourceMappingURL=Style.css.map */
