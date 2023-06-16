@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body { 
+  background: #333;
+  align-items: center;
+}
+
 .card {
     width: 200px;
     height: 300px;
@@ -15,14 +20,24 @@
     transition: background-color 0.3s ease;
     display: inline-block;
     margin: 10px;
+
+
     
   }
 
   .card:hover {
       background: linear-gradient(45deg,#ff357a, #fff172);
+ 
   }
 
   .card h2 {
     margin-top: 0;
     
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-weight: bold;
   }
