@@ -1,0 +1,38 @@
+$main-color: black;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #333;
+    font-family: sans-serif;
+  }
+  .box {
+    margin: 20px auto;
+    width: 50%;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 25px;
+  }
+  .color1 {
+    background-color: goldenrod;
+  }
+  .color2 {
+    background-color: goldenrod;
+  }
+  .color3{
+    background-color: $main-color black;
+  }
+  .color4 {
+    background-color: goldenrod;
+  }
+  .color5 {
+    background-color: goldenrod;
+  }
+  .color6 {
+    background-color: $main-color black;
+  }
+  .color7 {
+    background-color: goldenrod;
+  }
