@@ -34,7 +34,32 @@ switch (day) {
     case 'piątek':
         console.log('Dziś jest piątek ')
         break
-        
+
         default:
             console.log('dziś jest weekend ');
+}
+
+
+const month = 'may'
+
+switch (month) {
+    case 'january':
+    console.log('this is january');
+
+    case 'february':
+    console.log('this is February');
+
+    case 'march':
+    console.log('this is March');
+
+    case 'april':
+    console.log('this is April');
+
+    case 'may':
+    console.log('this is May');
+    break
+
+    default:
+            console.log('no month');
+
 }
