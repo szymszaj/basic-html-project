@@ -63,3 +63,34 @@ switch (month) {
             console.log('no month');
 
 }
+//%%
+const promo = '80%'
+switch (promo) {
+    case '10%':
+        console.log('we have 10%');
+        break
+
+    case '20%':
+        console.log('we have 20%');
+        break
+
+    case '30%':
+        console.log('we have 30%');
+        break
+
+    case '40%':
+        console.log('we have 40%');
+        break
+
+    case '50%':
+        console.log('we have 50%');
+        break
+
+    case '60%':
+        console.log('we have 60%'); 
+        break
+
+        default:
+            console.log('---');
+}
+ 

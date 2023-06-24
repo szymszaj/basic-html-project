@@ -23,3 +23,30 @@ if(pass.length > 10 && pass.includes('!')) {
 //     }
     
 // }
+
+const x = 50 
+const y = 30 
+if(x > y){
+    console.log(`${x} > ${y}`);
+}
+
+
+const color = 'blue'
+const newColor = 'green'
+if(color === newColor) {
+    console.log('kolory sie zgadazaj ');
+} else {
+    console.log('kolory sie nie zgadazaj ')
+}
+
+const x1 = 100
+const y2 = 100
+
+if (x1>y2) {
+    console.log('x1>y2');
+} else if (x1 === y2) {
+    console.log('x1=y2');
+
+} else {
+    console.log('x1<y2');
+}
