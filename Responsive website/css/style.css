@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #333;
+  font-family: sans-serif;
+}
+
+.box {
+  margin: 20px auto;
+  width: 50%;
+  height: 60px;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+.color1 {
+  background-color: goldenrod;
+}
+
+.color2 {
+  background-color: goldenrod;
+}
+
+.color3 {
+  background-color: black black;
+}
+
+.color4 {
+  background-color: goldenrod;
+}
+
+.color5 {
+  background-color: goldenrod;
+}
+
+.color6 {
+  background-color: black black;
+}
+
+.color7 {
+  background-color: goldenrod;
+}/*# sourceMappingURL=style.css.map */;
+  left: 0;
+  right: 0;
+}
+
+.square3 {
+  border: 5px solid black;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  background-color: gold;
+  margin: 30px;
+  padding: 20px;
+  border: 5px solid black;
+  display: flex;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */
