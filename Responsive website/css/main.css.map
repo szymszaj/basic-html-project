@@ -1,1 +1,1 @@
-{"version":3,"sources":["../basic-html-project/Responsive%20website/sass/main.scss","main.css"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;ACCJ;;ADCA;EACI,sBAAA;ACEJ","file":"main.css"}
+{"version":3,"sources":["../sass/main.scss","main.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,SAAA;EACA,UAAA;ACCF;;ADCA;EACE,iCAAA;EACA,qCAAA;EACA,iCAAA;EACA,sBAAA;ACEF;;ADOE;;;;;EAKE,YAAA;EACA,yBAAA;ACJJ","file":"main.css"}
