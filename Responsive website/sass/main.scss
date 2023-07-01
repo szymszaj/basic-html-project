@@ -1,3 +1,5 @@
+@use './colors.scss' as *;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,8 +22,12 @@ nav {
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show,
   .navbar-toggler,
-  .nav-link {
-    color: white;
+  .nav-link .fa-bars {
+    color: $white;
     text-transform: uppercase;
   }
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: $main-color;
 }

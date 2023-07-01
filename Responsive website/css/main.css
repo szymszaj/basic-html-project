@@ -15,7 +15,12 @@ nav .navbar-brand,
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .nav-link.show,
 nav .navbar-toggler,
-nav .nav-link {
-  color: white;
+nav .nav-link .fa-bars {
+  color: #fff;
   text-transform: uppercase;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #039dff;
 }/*# sourceMappingURL=main.css.map */
