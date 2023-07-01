@@ -17,6 +17,7 @@ body {
 
 nav {
   text-transform: uppercase;
+  z-index: 5;
 }
 nav .navbar-brand,
 nav .navbar-nav .nav-link.active,
@@ -25,6 +26,9 @@ nav .navbar-toggler,
 nav .nav-link .fa-bars {
   color: #fff;
   text-transform: uppercase;
+}
+nav .nav-link {
+  color: #fff;
 }
 nav .navbar-brand:hover {
   font-weight: bold;
@@ -37,6 +41,7 @@ nav .navbar-toggler {
 .nav-link:focus,
 .nav-link:hover {
   color: #039dff;
+  transition: 0.5s;
 }
 
 .hero-img {
