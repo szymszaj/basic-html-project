@@ -1,83 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidebar Menu</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/8f1d2cfc6c.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="sidebar">
-      <ul>
-        <li class="logo" style="--bg: #333;">
-          <a href="#">
-            <div class="icon"><i class="fa-brands fa-apple"></i></div>
-            <div class="text">Website Logo</div>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="menulist">
-      <ul>
-        <li class="logo" style="--bg: #f44336;">
-          <a href="#">
-            <div class="icon"><i class="fa-solid fa-house"></i></div>
-            <div class="text">Home</div>
-          </a>
-        </li>
-        <li class="logo" style="--bg: #ffa117;">
-          <a href="#">
-            <div class="icon"><i class="fa-solid fa-user"></i></div>
-            <div class="text">Profile</div>
-          </a>
-        </li>
-        <li class="logo" style="--bg: #0fc70f;">
-          <a href="#">
-            <div class="icon"><i class="fa-regular fa-comment"></i></div>
-            <div class="text">Inbox</div>
-          </a>
-        </li>
-        <li class="logo" style="--bg: #2196f3;">
-          <a href="#">
-            <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
-            <div class="text">Analytics</div>
-          </a>
-        </li>
-        <li class="logo" style="--bg: #b145e9;">
-          <a href="#">
-            <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
-            <div class="text">Order</div>
-          </a>
-        </li>
-        <li class="logo" style="--bg: #e91e63;">
-          <a href="#">
-            <div class="icon"><i class="fa-solid fa-gear"></i></div>
-            <div class="text">Settings</div>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="bottom">
-        <li style="--bg:#333;">
-        <a href="#">
-            <div class="icon"></div>
-            <div class="imgBx">
-                
-                <img src="/basic-html-project/Profile Card UI Design/Profil.img" alt="">
-            </div>
-        </a></li>
-        <li class="logo" style="--bg: #333;">
-            <a href="#">
-              <div class="icon"><i class="fa-solid fa-right-from-bracket"></i></div>
-              <div class="text">Logout</div>
-            </a>
-          </li>
-    </div>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f1d2cfc6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <body>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                        <span class="title">Apple</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Customer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="toggle"></div>
+        </div>
+    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
