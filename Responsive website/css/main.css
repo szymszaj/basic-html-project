@@ -47,7 +47,7 @@ nav .navbar-toggler {
 .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/network-2402637_1920.jpg");
+  background-image: url("../img/network-2402637_640.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -76,4 +76,10 @@ nav .navbar-toggler {
   align-items: center;
   flex-direction: column;
   height: 100%;
+}
+
+@media (min-width: 1200px) {
+  header.hero-img {
+    background-image: url(../img/network-2402637_1920.jpg);
+  }
 }/*# sourceMappingURL=main.css.map */
