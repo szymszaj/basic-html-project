@@ -83,6 +83,15 @@ nav {
     flex-direction: column;
     height: 100%;
   }
+
+  .fa-chevron-down{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-size: 30px;
+    color: $white;
+  }
 }
 
 //dodanie grafiki na wieksze ekrany
@@ -90,4 +99,7 @@ nav {
   header.hero-img {
     background-image: url(../img/network-2402637_1920.jpg);
   }
+}
+.btn{
+  text-transform: uppercase;
 }
