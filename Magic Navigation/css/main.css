@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #151517;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  background: #222327;
+  padding: 15px 60px;
+}
+nav a {
+  position: relative;
+  color: #999;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

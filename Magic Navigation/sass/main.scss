@@ -1,0 +1,28 @@
+@use "./color.scss" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: $main-color;
+}
+nav{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    background: $nav-color;
+    padding: 15px 60px;
+
+    a {
+        position: relative;
+        color: $text;
+        text-decoration: none;
+    }
+}
