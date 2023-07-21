@@ -92,7 +92,7 @@ nav .navbar-toggler:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: -5;
 }
 .hero-img .hero-text {
@@ -130,6 +130,33 @@ nav .navbar-toggler:hover {
   color: #039dff;
 }
 
+.aboutst-hero {
+  position: relative;
+  background-image: url("../img/technology-g318c3c5c2_640.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ddd;
+  z-index: 0;
+}
+.aboutst-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+.aboutst-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+.aboutst-hero i {
+  font-size: 36px;
+}
+.aboutst-hero .aboutus-hero-title {
+  font-size: 24px;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;
@@ -141,6 +168,9 @@ nav .navbar-toggler:hover {
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
+  }
+  .aboutst-hero {
+    background-image: url("../img/technology-gf41a0fae8_1920.jpg");
   }
 }
 @media (min-width: 1200px) {
