@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-padding-top: 74px;
+}
+
 body {
   font-family: "Comfortaa", cursive;
   font-family: "Montserrat", sans-serif;
@@ -17,24 +21,22 @@ body {
 }
 
 .shadow-bg {
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 .section-title {
   text-align: center;
   text-transform: uppercase;
 }
-.underline{
+.underline {
   margin: 0 auto 40px;
   width: 60px;
   height: 4px;
   background-color: $main-color;
-  
 }
 nav {
   text-transform: uppercase;
-  transition: .6s;
+  transition: background-color 0.6s;
   z-index: 5;
   .navbar-brand,
   .navbar-nav .nav-link.active,
@@ -106,17 +108,25 @@ nav {
   }
 }
 
-.aboutus{
-  i{
+.aboutus {
+  i {
     margin-top: 20px;
     font-size: 30px;
   }
-  .aboutus-card-title{
+  .aboutus-card-title {
     font-size: 18px;
     text-transform: uppercase;
   }
-  .aboutus-card-text{
+  .aboutus-card-text {
     font-size: 14px;
+  }
+
+  .aboutus-hover {
+    transition: color 0.4s;
+  }
+
+  .aboutus-hover:hover {
+    color: $main-color;
   }
 }
 
@@ -128,6 +138,12 @@ nav {
     p {
       font-size: 20px;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
   }
 }
 

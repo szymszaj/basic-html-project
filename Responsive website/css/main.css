@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 74px;
+}
+
 body {
   font-family: "Comfortaa", cursive;
   font-family: "Montserrat", sans-serif;
@@ -33,7 +37,7 @@ body {
 
 nav {
   text-transform: uppercase;
-  transition: 0.6s;
+  transition: background-color 0.6s;
   z-index: 5;
 }
 nav .navbar-brand,
@@ -115,6 +119,12 @@ nav .navbar-toggler {
 .aboutus .aboutus-card-text {
   font-size: 14px;
 }
+.aboutus .aboutus-hover {
+  transition: color 0.4s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
 
 @media (min-width: 768px) {
   .hero-text h1 {
@@ -122,6 +132,11 @@ nav .navbar-toggler {
   }
   .hero-text p {
     font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
   }
 }
 @media (min-width: 1200px) {
