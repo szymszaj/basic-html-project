@@ -56,8 +56,16 @@ nav {
   }
   .navbar-toggler {
     padding: 10px 15px;
+    transition: 0.4s;
   }
+  .navbar-toggler:hover {
+    color: $main-color;
+  }
+  // .navbar-toggler:active{
+  //   background-color: $main-color;
+  // }
 }
+
 .nav-link:focus,
 .nav-link:hover {
   color: $main-color;
