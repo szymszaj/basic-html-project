@@ -78,13 +78,15 @@ const chcekClick = e => {
      e.target.closest('li').classList.toggle('completed');
      e.target.classList.toggle('completed')
     } else if(e.target.matches('.edit')) {
-        editTodo()
+        editTodo(e)
     } else if (e.target.matches('.delete')){
         console.log('delete');
     }
 }
 
-const editTodo = () => {
+const editTodo = e => {
+    todoToEdit = e.target.closest('li')
+    console.log(todoToEdit.firstChild);
     popup.style.display = 'flex'
 }
 
