@@ -35,6 +35,7 @@ const prepareDOMEvents = () => {
     addBtn.addEventListener('click', addNewTodo)
     ulList.addEventListener('click', chcekClick)
     popupCloseBtn.addEventListener('click', closePopup)
+    popupAddBtn.addEventListener('click', changeTodoText)
 }
 
 
@@ -86,12 +87,24 @@ const chcekClick = e => {
 
 const editTodo = e => {
     todoToEdit = e.target.closest('li')
+    popupInput.value = todoToEdit.firstChild.textContent
     console.log(todoToEdit.firstChild);
     popup.style.display = 'flex'
 }
 
 const closePopup = () => {
     popup.style.display = 'none'
+    popupInfo.textContent = ''
+}
+
+const changeTodoText = () => {
+    if(popupInput.value !== ''){
+      todoToEdit.firstChild.textContent = popupInput.value
+      popup.style.display = 'none'
+      popupInfo.textContent = ''
+    } else {
+        popupInfo.textContent = 'Musisz podać jakąś treść!'
+    }
 }
 
 document.addEventListener('DOMContentLoaded', main)
