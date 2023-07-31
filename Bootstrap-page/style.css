@@ -15,3 +15,23 @@
       width: 50%;
     }
   } 
+
+
+  /* Konfetti */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffcc00;
+  opacity: 0.9;
+  animation: confettiAnimation 2s ease-out;
+}
+
+@keyframes confettiAnimation {
+  0% {
+    transform: translateY(0) rotateZ(0);
+  }
+  100% {
+    transform: translateY(100vh) rotateZ(720deg);
+  }
+}
