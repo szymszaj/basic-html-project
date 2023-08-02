@@ -180,9 +180,47 @@ nav {
     padding-bottom: 20px;
   }
 }
-.prices{
-  .price-box{
+.prices {
+  .price-box {
     margin: 20px;
+    background-color: $white;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: scale .4s;
+
+    span{
+      font-weight: bold;
+    }
+
+    i {
+      padding: 0 5px;
+      font-size: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      text-transform: uppercase;
+    }
+  }
+  .price-title {
+    color: $main-color;
+    text-transform: uppercase;
+    // font-weight: bold;
+    font-size: 20px;
+  }
+
+  .price-tag{
+    font-weight: bold;
+  }
+
+  .price-box:hover {
+    scale: 1.05;
+    // transition: 0.4s;
+  }
+  .price-info{
+    margin-top: 30px;
+  }
+  a{
+    text-decoration: none;
   }
 }
 
