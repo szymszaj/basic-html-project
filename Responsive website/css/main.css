@@ -12,7 +12,7 @@ body {
   font-family: "Comfortaa", cursive;
   font-family: "Montserrat", sans-serif;
   font-family: "Nunito", sans-serif;
-  background-color: #333;
+  background-color: #ebecf2;
 }
 
 .blue-text {
@@ -170,6 +170,10 @@ nav .navbar-toggler:hover {
   padding-bottom: 20px;
 }
 
+.prices .price-box {
+  margin: 20px;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;
@@ -185,7 +189,6 @@ nav .navbar-toggler:hover {
   .aboutst-hero {
     background-image: url("../img/technology-gf41a0fae8_1920.jpg");
   }
- 
 }
 @media (min-width: 1200px) {
   header.hero-img {
