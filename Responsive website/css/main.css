@@ -254,6 +254,9 @@ nav .navbar-toggler:hover {
 .team .card:hover {
   scale: 0.96;
 }
+.team .card-body {
+  height: 160px;
+}
 .team .card-title {
   margin-bottom: 20px;
   text-align: center;
