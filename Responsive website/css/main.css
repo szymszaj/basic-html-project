@@ -263,6 +263,23 @@ nav .navbar-toggler:hover {
   text-transform: uppercase;
 }
 
+.achievements-list {
+  padding: 20px 0;
+}
+.achievements-list i {
+  padding: 10px;
+  font-size: 44px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+.achievements-list .achievement-number {
+  font-size: 22px;
+}
+.achievements-list .achievement-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 @media (min-width: 1200px) {
   header.hero-img {
     background-image: url(../img/network-2402637_1920.jpg);

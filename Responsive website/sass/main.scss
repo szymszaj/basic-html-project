@@ -292,6 +292,24 @@ nav {
   
   }
 }
+.achievements-list{
+  padding: 20px 0;
+  i{
+    padding: 10px;
+    font-size: 44px;
+    color:$white;
+    text-shadow: 0 0 5px #000;
+
+  }
+  .achievement-number{
+    font-size: 22px;
+  }
+  .achievement-text{
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  
+}
 
 //dodanie grafiki na wieksze ekrany
 @media (min-width: 1200px) {
