@@ -186,9 +186,9 @@ nav {
     background-color: $white;
     padding: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    transition: scale .4s;
+    transition: scale 0.4s;
 
-    span{
+    span {
       font-weight: bold;
     }
 
@@ -208,7 +208,7 @@ nav {
     font-size: 20px;
   }
 
-  .price-tag{
+  .price-tag {
     font-weight: bold;
   }
 
@@ -216,10 +216,10 @@ nav {
     scale: 1.05;
     // transition: 0.4s;
   }
-  .price-info{
+  .price-info {
     margin-top: 30px;
   }
-  a{
+  a {
     text-decoration: none;
   }
 }
@@ -242,6 +242,50 @@ nav {
 
   .aboutst-hero {
     background-image: url("../img/technology-gf41a0fae8_1920.jpg");
+  }
+}
+
+.team {
+  position: relative;
+  background-image: url("../img/team/meeting-room-828547_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  .section-title{
+    color: $light-gray;
+  }
+
+  .team-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -5;
+  }
+
+  .card{
+
+    transition: scale .3s;
+    img{
+      height: 300px;
+      object-fit: cover;
+    }
+    i {
+      padding: 10px;
+    }
+  }
+
+  .card:hover{
+    scale: .96;
+  }
+
+  .card-title {
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  
   }
 }
 

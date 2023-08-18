@@ -222,6 +222,44 @@ nav .navbar-toggler:hover {
     background-image: url("../img/technology-gf41a0fae8_1920.jpg");
   }
 }
+.team {
+  position: relative;
+  background-image: url("../img/team/meeting-room-828547_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.team .section-title {
+  color: #ddd;
+}
+.team .team-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+.team .card {
+  transition: scale 0.3s;
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card i {
+  padding: 10px;
+}
+.team .card:hover {
+  scale: 0.96;
+}
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media (min-width: 1200px) {
   header.hero-img {
     background-image: url(../img/network-2402637_1920.jpg);
