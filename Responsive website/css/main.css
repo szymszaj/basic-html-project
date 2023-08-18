@@ -280,6 +280,51 @@ nav .navbar-toggler:hover {
   text-transform: uppercase;
 }
 
+.contact {
+  position: relative;
+  background-image: url("../img/new-york-1745089_1920.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+.contact .section-title {
+  color: #ddd;
+}
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0.85);
+  z-index: -5;
+}
+.contact .contact-us {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.contact .contact-item {
+  margin: 30px 0;
+}
+.contact h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact .social-media {
+  font-size: 26px;
+}
+.contact a {
+  padding: 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+.contact a:hover {
+  color: #039dff;
+}
+
 @media (min-width: 1200px) {
   header.hero-img {
     background-image: url(../img/network-2402637_1920.jpg);
