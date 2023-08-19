@@ -19,3 +19,9 @@ document.addEventListener('DOMContentLoaded', function(){
     window.addEventListener('scroll', addShadow)
 
 })
+
+AOS.init({
+    startEvent: 'DOMContentLoaded',
+    offset: 200,
+    once: true,
+});
