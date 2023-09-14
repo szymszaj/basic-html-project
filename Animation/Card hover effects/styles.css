@@ -39,6 +39,7 @@ body {
 }
 .container:hover .glass{
     transform: rotate(0deg);
+    margin: 0 20px;
 }
 
 .container .glass::before {
