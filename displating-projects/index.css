@@ -34,16 +34,16 @@ body {
     transition: .5s;
     border-radius: 10px;
     margin: 0 -45px;
-    transform: rotate(calc(var(--r) * 1deg));
+    /* transform: rotate(calc(var(--r) * 1deg) ); */
 
 }
 .container:hover .glass{
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
     margin: 0 20px;
 }
 
 .container .glass::before {
-    content: attr(onclick);
+    content: attr( data-text);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -59,3 +59,4 @@ body {
     font-size: 4em;
     color: #fff;
 }
+
