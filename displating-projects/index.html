@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card hover effects</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/8f1d2cfc6c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="glass" style="--r: -15" onclick="navigateTo('https://szymszaj.github.io/basic-html-project/Pages/Responsive%20website/page.html')">
+        <!-- <i class="fa-regular fa-pen-to-square"></i> -->
+      </div>
+      <div class="glass" style="--r: 5" onclick="navigateTo('link2.html')" data-text="Code">
+        <!-- <i class="fa-solid fa-laptop-code"></i> -->
+      </div>
+      <div class="glass" style="--r: 25" onclick="navigateTo('link3.html')" data-text="Launch">
+        <!-- <i class="fa-solid fa-rocket"></i> -->
+      </div>
+      <div class="glass" style="--r: -15" onclick="navigateTo('link4.html')" data-text="Earn">
+        <!-- <i class="fa-solid fa-money-check-dollar"></i> -->
+      </div>
+      <div class="glass" style="--r: -15" onclick="navigateTo('link5.html')" data-text="Earn">
+        <!-- <i class="fa-solid fa-money-check-dollar"></i> -->
+      </div>
+      <div class="glass" style="--r: -15" onclick="navigateTo('link6.html')" data-text="Earn">
+        <!-- <i class="fa-solid fa-money-check-dollar"></i> -->
+      </div>
+    </div>
+
+    <script>
+      function navigateTo(url) {
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>
