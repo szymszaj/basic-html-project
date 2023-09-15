@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,700;0,800;0,900;1,300;1,400;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --black: #07101d;
+    --themColor: #00A78E;
+    --iconColor: #2C2F3F;
+    --textColor: #525252;
+    --bgColor: #F7F7F7;
+}
+
+header {
+    height: 100vh;
+    width: 300px;
+    padding: 15px 30px;
+    background-color: var(--black);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+header .profile {
+    text-align: center;
+    margin: 10px 0;
+}
+
+header .profile img {
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid var(--iconColor);
+}
+
+header .profile h1 {
+    color: white;
+    font-weight: 600;
+}
+
+header .profile .social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    background-color: var(--iconColor);
+    color: white;
+    font-size: 20px;
+    margin: 2px;
+    transition: 0.4s, transform .3s;
+}
+
+header .profile .social-icons a:hover {
+    background-color: var(--themColor);
+    transform: scale(0.9)
+}
+
+header nav {
+    margin-top: 30px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
+header nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s, transform .3s;
+}
+
+header nav ul li a:hover i {
+    color: var(--themColor);
+    transform: scale(0.9)
+}
+
+header nav ul li .active i {
+    color: var(--themColor);
+}
+
+header .footer {
+    text-align: center;
+    background-color: var(--black);
+    width: 300px;
+    color: lightgray;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+header .footer a {
+    color: var(--themColor);
+}
+#MenuBtn{
+    
+}
