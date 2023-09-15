@@ -391,4 +391,34 @@ main {
     #about .about-col .img-col img{
         width: 50%;
     }
+    #about .about-col .info-col h2 {
+        font-weight: 600;
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+    #about .about-col .info-col p {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    #about .about-col .info-col .icon-list-col{
+        flex-direction: column;
+        gap: 0;
+    }
+    #about .about-col .info-col .icon-list-col .icon-list ul li {
+        margin: 10px 0;
+    }
+    #about .about-col .info-col .icon-list-col .icon-list ul li strong{
+        font-weight: 500;
+        margin-right: 0;
+    }
+    #about .about-col .info-col .icon-list-col .icon-list ul li span{
+        color: var(--textColor);
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #about .about-col .img-col img{
+        width: 90%;
+    }
 }
