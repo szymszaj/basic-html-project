@@ -1,48 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- CSS  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- fontAwesome -->
-    <script src="https://kit.fontawesome.com/8f1d2cfc6c.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/8f1d2cfc6c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- Heder -->
     <header>
-        <div class="profile">
-            <img src="img/me.jpg" alt="" width="150px">
-            <h1>Szymon Zych</h1>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook" ></i></a>
-                <a href="#"><i class="fa-brands fa-instagram" ></i></a>
-                <a href="#"><i class="fa-brands fa-github" ></i></a>
-                <a href="#"><i class="fa-brands fa-twitter" ></i></a>
-            </div>
+      <div class="profile">
+        <img src="img/me.jpg" alt="" width="150px" />
+        <h1>Szymon Zych</h1>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
+      </div>
 
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house" ></i>Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-user" ></i>About Me</a></li>
-                <li><a href="#"><i class="fa-solid fa-briefcase" ></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa-solid fa-server" ></i>Services</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope" ></i>Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i>About Me</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-briefcase"></i>Portfolio</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-server"></i>Services</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i>Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <!-- footer -->
-        <div class="footer">
-            <p>&copy; 2023<br>Designed By <a href="https://szymszaj.github.io/basic-html-project/Profile%20Card%20UI%20Design/Profil%20Card.html">Me</a></p>
-        </div>
+      <!-- footer -->
+      <div class="footer">
+        <p>
+          &copy; 2023<br />Designed By
+          <a
+            href="https://szymszaj.github.io/basic-html-project/Profile%20Card%20UI%20Design/Profil%20Card.html"
+            >Me</a
+          >
+        </p>
+      </div>
     </header>
     <!-- mobile nav -->
     <i class="fa-solid fa-bars" id="MenuBtn"></i>
 
+    <!-- **************/*/*/*/*/all body content **************/*/*/*/*/-->
 
+    <main>
+      <!-- home section start -->
+      <section id="home">
+        <div class="home-row">
+          <div class="text">
+            <h1>Cześć jestem<br />Szymon Zych <span>.</span></h1>
+            <p>Jestem <span class="auto-input"></span></p>
+          </div>
+        </div>
+      </section> 
 
+      <!-- about section start -->
+
+      <section id="about">
+        <h1 class="sub-heading">About Me</h1>
+        <div class="divider"></div>
+        <p>
+          Kilka slów o mnie! 
+        </p>
+
+        <div class="about-col">
+          <div class="img-col">
+            <img src="img/_MG_3702.JPG" alt="..." />
+          </div>
+
+          <div class="info-col">
+            <h2>Front-End Developer!</h2>
+            <p>
+              Jestem pasjonatem technologii i entuzjastą rozwoju osobistego.
+              Moje zainteresowanie dziedziną informatyki narodziło się z
+              fascynacji możliwościami, jakie niesie ze sobą świat cyfrowy. Moim
+              głównym celem zawodowym jest stać się wykwalifikowanym
+              programistą, zdolnym do tworzenia innowacyjnych rozwiązań oraz
+              rozwijania aplikacji, które mają wpływ na ludzi i otaczający nas
+              świat. Jednym z moich najważniejszych atutów jest pasja do nauki
+              nowych rzeczy. Uwielbiam wyzwania, które stawiają przede mną
+              technologie i rozwiązania informatyczne, i jestem gotów stale
+              poszerzać swoją wiedzę oraz umiejętności. Wierzę, że umiejętność
+              ciągłego uczenia się jest kluczowa w dzisiejszym dynamicznym
+              świecie technologii. Ponadto, moje zainteresowania w życiu
+              prywatnym również pokazują moją pasję do technologii. Uwielbiam
+              rozwiązywać zagadki i wyzwania, dlatego też często spędzam czas
+              nad projektami programistycznymi poza pracą. Gra w gry komputerowe
+              i sport stanowią dla mnie doskonałe narzędzia do rozwijania
+              umiejętności zręcznościowych, koncentracji i współpracy
+              zespołowej, które są równie istotne w świecie technologii.
+            </p>
+            <div class="icon-list-col">
+              <div class="icon-list">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Wiek:</strong> <span> 20</span>
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Telefon:</strong> <span>+48 695615115</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Miasto:</strong> <span> Nowy Targ</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="icon-list">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Stopień:</strong> <span> początkujący</span>
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Email:</strong> szymonzych868@gmail.com<span></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- animation in JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
