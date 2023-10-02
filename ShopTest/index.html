@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sklep Internetowy</title>
+</head>
+<body>
+    <header>
+        <h1>Sklep Internetowy</h1>
+    </header>
+    <main>
+        <section class="product">
+            <img src="obrazek1.jpg" alt="Produkt 1">
+            <h2>Produkt 1</h2>
+            <p>Cena: $19.99</p>
+            <button class="add-to-cart" data-price="19.99">Dodaj do koszyka</button>
+        </section>
+        <section class="product">
+            <img src="obrazek2.jpg" alt="Produkt 2">
+            <h2>Produkt 2</h2>
+            <p>Cena: $29.99</p>
+            <button class="add-to-cart" data-price="29.99">Dodaj do koszyka</button>
+        </section>
+    </main>
+    <aside class="cart">
+        <h2>Koszyk</h2>
+        <ul class="cart-items">
+            <!-- Tutaj będą wyświetlane produkty dodane do koszyka -->
+        </ul>
+        <p id="total">Suma: $0.00</p>
+        <button class="checkout">Zamów</button>
+    </aside>
+    <script src="add.js"></script>
+</body>
+</html>
