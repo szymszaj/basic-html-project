@@ -2,8 +2,8 @@
     --main-color:#14161F;
 }
 body {
-    background-color: var(--main-color); /* Tło ciemne */
-    color: #fff; /* Kolor tekstu biały */
+    background-color: var(--main-color); 
+    color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
