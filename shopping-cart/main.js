@@ -1,34 +1,36 @@
 let shop = document.getElementById("shop")
 
 let shopItemsData = [{
-    id: "ppppop",
+    id: "TB789",
     name: "Casual shirt",
     price: 45,
-    desc: "Lorem ipsum  sit amet consecteturipsum dolor sit amet consectetur sit amet consectetur adipisicing.",
+    desc: "This casual shirt is crafted from comfortable, lightweight fabric and boasts a relaxed fit. Its versatile design makes it suitable for various informal occasions.",
     img: "images/img-1.jpg"
 },
 {
-    id: "ppppp",
+    id: "SKU7890",
     name: "Office shirt",
     price: 100,
-    desc: "Lorem ipsum dolor sit amet ipsum dolor sit amet consectetur consectetur adipisicing.",
+    desc: "This office shirt is tailored with precision, offering a sharp, professional appearance. Its crisp white fabric and classic button-down collar make it a timeless choice for the workplace.",
     img: "images/img-2.jpg"
 },
 {
-    id: "pppop",
+    id: " Kent456",
     name: "T shirt",
     price: 25,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur.",
+    desc: "This T-shirt is made of soft, breathable cotton and features a classic crew neckline. Its vibrant blue color adds a pop of style to any outfit.",
     img: "images/img-3.jpg"
 },
 {
-    id: "pppo",
+    id: " T955876",
     name: "Mens Suit",
-    price: 259,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+    price: 599,
+    desc: "This men's suit exudes elegance and sophistication, featuring a well-tailored jacket and matching trousers. The timeless design and fine craftsmanship make it a perfect choice for formal occasions and business settings.",
     img: "images/img-4.jpg"
 },
 ]
+
+let basket = [];
 
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData
@@ -44,9 +46,9 @@ let generateShop = () => {
         <div class="price-quantity">
             <h2>$ ${price}</h2>
             <div class="buttons">
-                <i class="fa-solid fa-minus"></i>
+                <i onclick="decrement(${id}))" class="fa-solid fa-minus"></i>
                 <div id=${id} class="quantity">0</div>
-                <i class="fa-solid fa-plus"></i>
+                <i onclick="increment(${id})" class="fa-solid fa-plus"></i>
             </div>
         </div>
     </div>
@@ -57,3 +59,11 @@ let generateShop = () => {
 };
 
 generateShop()
+
+let increment = (id) => {
+    let selectedItem = id;
+    console.log(selectedItem.id);
+ }
+
+let decrement = () => { }
+let update = () => { }
