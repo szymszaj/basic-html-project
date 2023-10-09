@@ -1,3 +1,5 @@
+let label = document.getElementById("label");
+let ShoppingCart = document.getElementById("shopping-cart");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 let calculation = () => {
