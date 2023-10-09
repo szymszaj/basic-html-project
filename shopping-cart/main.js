@@ -61,11 +61,12 @@ let generateShop = () => {
 generateShop()
 
 let increment = (id) => {
-    let search = basket.find((x) => x.id === id);
+    let selectedItem = id;
+    let search = basket.find((x) => x.id === selectedItem.id);
 
     if (search === undefined) {
         basket.push({
-            id: id,
+            id: selectedItem.id,
             item: 1,
         });
     } else {
@@ -73,20 +74,33 @@ let increment = (id) => {
     }
 
     // console.log(basket);
-    update(id);
+    update(selectedItem.id);
 }
 
 let decrement = (id) => {
-    let search = basket.find((x) => x.id === id);
+    let selectedItem = id;
+    let search = basket.find((x) => x.id === selectedItem.id);
 
-    if (!search || search.item === 0) return;
-
-    search.item -= 1;
-    update(id);
+    if (search === undefined) return;
+    else if (search.item === 0) return;
+    else {
+        search.item -= 1;
+    }
+    update(selectedItem.id);
+    basket = basket.filter((x) => x.item !== 0);
     // console.log(basket);
 }
 
 let update = (id) => {
     let search = basket.find((x) => x.id === id);
-    console.log(search.item);
+    // console.log(search.item);
+    document.getElementById(id).innerHTML = search.item;
+    calculation()
 }
+
+let calculation = () => {
+    let cartIcon = document.getElementById("cartAmount");
+    cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
+  };
+  
+  calculation();
