@@ -25,7 +25,7 @@ let shopItemsData = [{
     id: " T955876",
     name: "Mens Suit",
     price: 599,
-    desc: "This men's suit exudes elegance and sophistication, featuring a well-tailored jacket and matching trousers. The timeless design and fine craftsmanship make it a perfect choice for formal occasions and business settings.",
+    desc: "Featuring a well-tailored jacket and matching trousers. The timeless design and fine craftsmanship make it a perfect choice for formal occasions and business settings.",
     img: "images/img-4.jpg"
 },
 ]
@@ -46,7 +46,7 @@ let generateShop = () => {
         <div class="price-quantity">
             <h2>$ ${price}</h2>
             <div class="buttons">
-                <i onclick="decrement(${id}))" class="fa-solid fa-minus"></i>
+                <i onclick="decrement(${id})" class="fa-solid fa-minus"></i>
                 <div id=${id} class="quantity">0</div>
                 <i onclick="increment(${id})" class="fa-solid fa-plus"></i>
             </div>
@@ -62,8 +62,27 @@ generateShop()
 
 let increment = (id) => {
     let selectedItem = id;
-    console.log(selectedItem.id);
- }
+    let search = basket.find((x) => x.id === selectedItem)
 
-let decrement = () => { }
+    if (search === undefined) {
+        basket.push({
+            id: selectedItem,
+            item: 1,
+        })
+    } else {
+        search.item += 1;
+    }
+    console.log(basket);
+}
+let decrement = (id) => {
+    let selectedItem = id;
+    let search = basket.find((x) => x.id === selectedItem)
+
+    if (search.item === 0) return;
+     else {
+        search.item -= 1;
+    }
+    console.log(basket);
+}
+
 let update = () => { }
