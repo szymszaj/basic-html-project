@@ -61,33 +61,32 @@ let generateShop = () => {
 generateShop()
 
 let increment = (id) => {
-    let selectedItem = id;
-    let search = basket.find((x) => x.id === selectedItem)
+    let search = basket.find((x) => x.id === id);
 
     if (search === undefined) {
         basket.push({
-            id: selectedItem,
+            id: id,
             item: 1,
-        })
+        });
     } else {
         search.item += 1;
     }
+
     // console.log(basket);
-    update(selectedItem);
+    update(id);
 }
 
 let decrement = (id) => {
-    let selectedItem = id;
-    let search = basket.find((x) => x.id === selectedItem);
+    let search = basket.find((x) => x.id === id);
 
     if (!search || search.item === 0) return;
-    
+
     search.item -= 1;
-    update(selectedItem);
+    update(id);
+    // console.log(basket);
 }
 
-
 let update = (id) => {
-    let search = basket.find((x) => x.id === id)
+    let search = basket.find((x) => x.id === id);
     console.log(search.item);
 }
