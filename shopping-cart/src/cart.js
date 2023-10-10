@@ -104,9 +104,15 @@ let removeItem = (id) => {
     let selectedItem = id
     basket = basket.filter((x) => x.id !== selectedItem.id)
     generateCartItem()
+    totalAmount()
+    calculation()
     localStorage.setItem("data", JSON.stringify(basket))
 }
-
+let clearCart = () => {
+    basket = []
+    generateCartItem()
+    localStorage.setItem("data", JSON.stringify(basket))
+}
 let totalAmount = () => {
     if (basket.length !== 0) {
         let amount = basket.map((x) => {
@@ -114,10 +120,10 @@ let totalAmount = () => {
             let search = shopItemsData.find((z) => z.id === id) || []
             return item * search.price
         }).reduce((x, y) => x + y, 0)
-        label.innerHTML =  `
+        label.innerHTML = `
         <h2>Total Bill: $ ${amount}</h2>
         <button class="checkout">Checkout</button>
-        <button class="removeAll">Clear Cart</button>
+        <button onclick="clearCart()" class="removeAll">Clear Cart</button>
 
         `
     }
