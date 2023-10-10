@@ -97,11 +97,30 @@ let update = (id) => {
     // console.log(search.item);
     document.getElementById(id).innerHTML = search.item;
     calculation()
+    // totalAmount()
 }
 
-let removeItem = (id) =>{
-    let selectedItem = id 
-    basket =basket.filter((x)=>x.id !== selectedItem.id)
+let removeItem = (id) => {
+    let selectedItem = id
+    basket = basket.filter((x) => x.id !== selectedItem.id)
     generateCartItem()
     localStorage.setItem("data", JSON.stringify(basket))
 }
+
+let totalAmount = () => {
+    if (basket.length !== 0) {
+        let amount = basket.map((x) => {
+            let { item, id } = x
+            let search = shopItemsData.find((z) => z.id === id) || []
+            return item * search.price
+        }).reduce((x, y) => x + y, 0)
+        label.innerHTML =  `
+        <h2>Total Bill: $ ${amount}</h2>
+        <button class="checkout">Checkout</button>
+        <button class="removeAll">Clear Cart</button>
+
+        `
+    }
+    else return
+}
+totalAmount()

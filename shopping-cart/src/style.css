@@ -100,7 +100,9 @@ a {
     margin-bottom: 20px;
 }
 
-.HomeBtn {
+.HomeBtn,
+.checkout,
+.removeAll {
     background-color: #212529;
     color: white;
     border: none;
@@ -109,7 +111,12 @@ a {
     cursor: pointer;
     margin-top: 10px;
 }
-
+.checkout {
+    background-color: rgb(51, 146, 51);
+}
+.removeAll{
+    background-color: red;
+}
 .fa-xmark {
     color: red;
     font-weight: bold;
@@ -140,7 +147,8 @@ a {
     display: flex;
     align-items: center;
 }
-.cart-item-price{
+
+.cart-item-price {
     background-color: #212529;
     color: white;
     border-radius: 4px;
