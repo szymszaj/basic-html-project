@@ -7,13 +7,16 @@
 body {
     font-family: sans-serif;
 }
-i{
+
+i {
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -96,7 +99,8 @@ a{
     text-align: center;
     margin-bottom: 20px;
 }
-.HomeBtn{
+
+.HomeBtn {
     background-color: #212529;
     color: white;
     border: none;
@@ -104,4 +108,42 @@ a{
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.fa-xmark {
+    color: red;
+    font-weight: bold;
+}
+
+/* style shopping cart */
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.cart-item {
+    border: 1px solid #212529;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+}
+.cart-item-price{
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+    margin-left: 10px;
 }
