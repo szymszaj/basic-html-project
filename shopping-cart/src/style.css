@@ -30,11 +30,17 @@ a {
 
 .cart {
     position: relative;
-    background-color: #fff;
-    color: #212529;
+    /* background-color: #fff;
+    color: #212529; */
+    background-color: #212529;
+    color: white;
     font-size: 32px;
     padding: 5px;
-    border-radius: 3px;
+    /* border-radius: 3px; */
+    transition: .3s ease-in-out;
+}
+.cart:hover {
+    transform: scale(0.95);
 }
 
 .cartAmount {
@@ -93,10 +99,18 @@ a {
 
 .fa-minus {
     color: red;
+    transition: .2s ease-in-out;
+}
+.fa-minus:hover {
+    transform: scale(.9);
 }
 
 .fa-plus {
     color: green;
+    transition: .2s ease-in-out;
+}
+.fa-plus:hover {
+    transform: scale(1.1);
 }
 
 /* cart JS  */
@@ -115,16 +129,30 @@ a {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
+    transition: .2s ease-in-out;
 }
-.checkout {
+.checkout{
     background-color: rgb(51, 146, 51);
+}
+.checkout:hover {
+    transform: scale(0.95);
 }
 .removeAll{
     background-color: red;
 }
+.removeAll:hover{
+    transform: scale(0.95);
+}
+.HomeBtn:hover{
+    transform: scale(0.95);
+}
 .fa-xmark {
     color: red;
     font-weight: bold;
+    transition: .2s ease-in-out;
+}
+.fa-xmark:hover {
+    transform: scale(1.2);
 }
 
 /* style shopping cart */
@@ -159,4 +187,16 @@ a {
     border-radius: 4px;
     padding: 3px 6px;
     margin-left: 10px;
+}
+.fa-bag-shopping{
+    transition: color .3s ease-in-out;
+}
+.fa-bag-shopping:hover {
+    color: tomato;
+}
+.fa-cart-shopping{
+    transition: color .3s ease-in-out;
+}
+.fa-cart-shopping:hover {
+    color: rgb(51, 146, 51);
 }
