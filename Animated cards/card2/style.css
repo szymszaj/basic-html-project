@@ -76,3 +76,10 @@ h3{
 .card:hover .two {
     transform: rotateY(-180deg);
 }
+
+.card:hover .three{
+    animation: up .8s;
+}
+.card:hover .text-three{
+    animation: down .8s;
+}
