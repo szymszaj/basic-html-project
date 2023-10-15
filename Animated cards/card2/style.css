@@ -56,30 +56,69 @@ body {
     transition: .8s;
     opacity: 0;
 }
-h3{
+
+h3 {
     margin-top: 450px;
     margin-bottom: 20px;
 }
+
 .text-one {
     transform: rotateX(-180deg);
 }
-.text-two{
+
+.text-two {
     transform: rotateY(-180deg);
 }
-.card:hover .text{
+
+.card:hover .text {
     transform: rotate(0);
     opacity: 1;
 }
+
 .card:hover .one {
     transform: rotateX(180deg);
 }
+
 .card:hover .two {
     transform: rotateY(-180deg);
 }
 
-.card:hover .three{
+.card:hover .three {
     animation: up .8s;
 }
-.card:hover .text-three{
-    animation: down .8s;
+
+.card:hover .text-three {
+    animation: down .7s;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    60% {
+        transform: translateY(-60%);
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(0);
+        z-index: -1;
+
+    }
+    50% {
+        transform: translateY(60%);
+        z-index: -1;
+
+    }
+    100% {
+        z-index: 1;
+    }
 }
