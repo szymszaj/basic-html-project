@@ -23,14 +23,14 @@ body {
 
 .link {
     position: relative;
-    padding: 10px 20px;
+    padding: 10px 26px;
     font-size: 38px;
     color: rgba(0, 140, 255);
     text-decoration: none;
 }
 
 .link:hover {
-    cursor: none;
+    cursor: pointer;
 }
 
 .link,
@@ -38,7 +38,8 @@ body {
 .link::before {
     transition: .3s;
 }
-.one::after{
+
+.one::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -50,7 +51,67 @@ body {
     transform-origin: right;
     transition: transform .3s
 }
-.one:hover::after{
+
+.one:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.two::after,
+.two::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.two::before {
+    top: -2px;
+    left: -5px;
+    border-top: 0 solid #fff;
+    border-left: 0 solid #fff;
+}
+
+.two::after {
+    bottom: -2px;
+    right: -8px;
+    border-bottom: 0 solid #fff;
+    border-right: 0 solid #fff;
+}
+
+.two:hover::after,
+.two:hover::before {
+    width: 50px;
+    height: 50%;
+}
+
+.two:hover::before {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.two:hover::after {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.three::before,
+.three::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.three::before {
+    right: 50%;
+}
+
+.three::after {
+    left: 50%;
+}
+.three:hover::before,
+.three:hover::after {
+    width: 50%;
 }
