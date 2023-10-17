@@ -47,6 +47,11 @@ ul {
     background-color: #50515A;
     opacity: 0;
     transition: color .3s;
+    /* box-shadow: 0 0 15px rgba(7, 236, 76, 0.349); */
+    /* border-radius: 50px; */
+    border-radius: 10px;
+    margin-top: 5px;
+
 }
 
 .dropdown li:hover {
