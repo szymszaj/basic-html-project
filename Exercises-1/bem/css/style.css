@@ -11,4 +11,32 @@ body {
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
   background-color: #333;
+}
+
+.card {
+  width: 400px;
+  background-color: #dddddd;
+  border-radius: 8px;
+}
+.card__img {
+  width: 100%;
+}
+.card__body {
+  padding: 10px 20px;
+}
+.card__text {
+  margin: 20px 0;
+}
+.card__btns {
+  display: flex;
+  justify-content: space-around;
+}
+.card__btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.card__btn--highlight {
+  background-color: rgb(36, 156, 0);
 }/*# sourceMappingURL=style.css.map */
