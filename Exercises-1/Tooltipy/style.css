@@ -38,14 +38,17 @@ body {
     background-color: #999;
     font-size: 14px;
 }
-.tooltip:hover::before{
+
+.tooltip:hover::before {
     display: block;
 }
-.tooltip-top::before{
+
+.tooltip-top::before {
     content: 'you can write whatever you want';
     bottom: 130%;
 }
-.tooltip-right::before{
+
+.tooltip-right::before {
     content: 'co robisz, żeby czas leciał?';
     left: 110%;
 }
