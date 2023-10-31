@@ -15,16 +15,12 @@ const addToCartButtons = document.querySelectorAll('.add-to-cart');
                 cartItemsList.appendChild(listItem);
             });
         });
-
-// Obsługa przycisku "Zamów"
 const checkoutButton = document.querySelector('.checkout');
 checkoutButton.addEventListener('click', () => {
     const confirmResult = confirm('Czy na pewno chcesz złożyć zamówienie?');
 
     if (confirmResult) {
-        // Użytkownik zaakceptował zamówienie - zamknij stronę
         window.close();
     } else {
-        // Użytkownik odrzucił zamówienie - nic nie rób
     }
 });
