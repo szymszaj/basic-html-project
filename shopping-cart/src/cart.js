@@ -1,4 +1,4 @@
-let label = document.getElementById("label");
+let label = document.getElementById("label");ous
 let ShoppingCart = document.getElementById("shopping-cart");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
@@ -15,7 +15,7 @@ let generateCartItem = () => {
             .map((x) => {
                 let { id, item } = x
                 let search = shopItemsData.find((z) => z.id === id) || []
-                let {img, name, price} = search
+                let { img, name, price } = search
                 return `
             <div class="cart-item">
             <img width="100" src=${img} alt="" />
