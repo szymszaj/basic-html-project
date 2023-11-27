@@ -1,8 +1,91 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 100;
+}
+
+.nav .nav-items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav .nav-item a {
+    display: block;
+    padding: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    transition: color .3s;
+}
+
+.nav .nav-item a:hover {
+    color: gold;
+}
+.nav.shrink .nav-item a {
+    padding: 20px;
+    font-size: 16px;
+    color: #000;
+}
+
+.nav.shrink .nav-item a:hover {
+    color: rgb(124, 111, 36);
+}
+.nav.shrink{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 700px;
+    color: #fff;
+    background-image: url('https://cdn.pixabay.com/photo/2014/02/22/18/27/paris-272198_1280.jpg');
+    background-size: cover;
+}
+
+.hero-img::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    content: '';
+}
+
+.hero-img h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 48px;
+    z-index: 5;
+}
+
+.content {
+    margin: 40px auto;
+    width: 800px;
+}
+
+.content h2 {
+    margin: 40px auto 10px;
+}
+
+.content p {
+    margin-bottom: 10px;
 }
