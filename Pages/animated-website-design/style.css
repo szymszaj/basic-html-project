@@ -1,8 +1,11 @@
-*{
-    margin: 0;padding: 0;box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.hero{
+
+.hero {
     width: 100%;
     min-height: 100vh;
     background-image: url('img/back-image.png');
