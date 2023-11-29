@@ -36,16 +36,28 @@ nav ul li {
 
 /* link */
 .text {
+    position: relative;
     text-decoration: none;
     color: black;
     font-weight: 400;
 }
-
+.text,
+.text::after,
+.text::before {
+    transition: .3s;
+}
 .login-btn {
     text-decoration: none;
     color: black;
     margin-right: 15px;
-    font-weight: 600;
+    font-weight: 900;
+    background: none;
+    border: none;
+    transition: transform .3s;
+    cursor: pointer;
+}
+.login-btn:hover{
+    transform: scale(1.1);
 }
 
 .btn {
@@ -104,6 +116,28 @@ nav ul li {
     opacity: 0;
     transform: translateY(30px);
     animation: moveup 0.5s linear forwards;
+}
+
+.three::before,
+.three::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: -4px;
+    border-bottom: 2px solid palevioletred;
+}
+
+.three::before {
+    right: 50%;
+}
+
+.three::after {
+    left: 50%;
+}
+
+.three:hover::before,
+.three:hover::after {
+    width: 50%;
 }
 
 @keyframes moveup {
