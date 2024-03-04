@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat' sans-serif;
+  font-family: "Montserrat" sans-serif;
 }
 
 body {
@@ -13,7 +13,6 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 10px;
   overflow-x: hidden !important;
-
 }
 header {
   display: flex;
@@ -59,7 +58,7 @@ header {
   z-index: 10;
 }
 
-.burger.active>span {
+.burger.active > span {
   background: var(--White);
 }
 
@@ -79,16 +78,16 @@ header {
   width: 60%;
 }
 
-.burger.active>span:nth-child(1) {
+.burger.active > span:nth-child(1) {
   transform: rotate(-45deg) translateY(1rem);
   width: 90%;
 }
 
-.burger.active>span:nth-child(2) {
+.burger.active > span:nth-child(2) {
   transform: rotate(45deg) translateY(-0.7rem);
 }
 
-.burger.active>span:nth-child(3) {
+.burger.active > span:nth-child(3) {
   transform: translateX(100vw);
 }
 
@@ -119,7 +118,7 @@ header {
   }
 
   .menu-link::after {
-    content: '';
+    content: "";
     width: 0;
     height: 0.2rem;
     background: var(--main);
@@ -139,7 +138,6 @@ header {
     padding: 0.5rem 1.5rem;
     border-radius: 1rem;
     color: var(--White);
-
   }
 
   .menu-link:last-child::after {
@@ -203,7 +201,6 @@ header {
 @media only screen and (min-width: 1400px) {
   .home-content {
     font-size: 2.8rem;
-
   }
 
   .home-img {
@@ -219,7 +216,6 @@ header {
 @media only screen and (min-width: 1650px) {
   .home-img {
     width: 45%;
-
   }
 
   .home {
@@ -242,7 +238,6 @@ header {
 @media only screen and (min-width: 1920px) {
   .home-img {
     width: 45%;
-
   }
 
   .home {
