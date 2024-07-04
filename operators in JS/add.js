@@ -8,17 +8,6 @@ if (pass.length > 10 && pass.includes("!")) {
   console.log("Masz za krótkie hasło");
 }
 
-// const color = 'blue'
-
-// if (color == 'blue' ){
-//     if ( 10 > 0 ){
-//         console.log('true true ');
-//     } else {
-//         console.log('okokok');
-//     }
-
-// }
-
 const x = 50;
 const y = 30;
 if (x > y) {
